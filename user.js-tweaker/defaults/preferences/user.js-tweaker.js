@@ -1,3 +1,4 @@
+pref("extensions.{-insert-id-here}.description", "chrome://user.js.tweaker/locale/greasemonkey.properties");
 pref("extensions.jid1-user.js-tweaker@jetpack.keepSettings", false);
 pref("extensions.jid1-user.js-tweaker@jetpack.browser.cache.disk.enable", true);
 pref("extensions.jid1-user.js-tweaker@jetpack.browser.cache.memory.enable", true);
