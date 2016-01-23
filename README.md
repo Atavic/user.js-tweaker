@@ -26,14 +26,14 @@ This will be the official [user.js](https://github.com/pyllyukko/user.js) by [py
 
 # ToDo
 
-* Write an GUI (currently the changes are only visible to options menu) (low-prio)
-* Get an method to restrict the integrated certificates by maniulating the cert8.db file (high-prio)
-* Add translations (low-prio)
-* Add add-on signing, please read [here](https://wiki.mozilla.org/Addons/Extension_Signing) (high-prio)
-* Add an account for addons.mozilla.org (high-prio)
-* Implement profile support (high-prio)
-* Add donate option (if needed) (low-prio)
-* Add _tracking_ option (default opt-out) to grab latest about:config settings e.g. if someone uses Firefox Nighly's and want submit the current changes (low-prio)
-* Add Android support (seperate Android profile because Android needs other security related option which e.g. affects battery/wlan) (high-prio)
-* Fix all reported issue (Issue tracker closed right now because massive ToDo list - sorry!)
+- [ ] Write an GUI (currently the changes are only visible within the add-ons options menu) (low-prio)
+- [ ] Get an method to restrict the integrated certificates by maniulating the cert8.db file (high-prio)
+- [ ] Add translations (low-prio)
+- [ ] Add add-on signing, please read [here](https://wiki.mozilla.org/Addons/Extension_Signing) (high-prio)
+- [ ] Add an account for addons.mozilla.org (high-prio)
+- [ ] Implement profile support (high-prio)
+- [ ] Add donate option (if needed) (low-prio)
+- [ ] Add _tracking_ option (default opt-out) to grab latest about:config settings e.g. if someone uses Firefox Nighly's and want submit the current changes (low-prio)
+- [ ] Add Android support (seperate Android profile because Android needs other security related option which e.g. affects battery/wlan) (high-prio)
+- [ ] Fix all reported issue (Issue tracker closed right now because massive ToDo list - sorry!)
 
