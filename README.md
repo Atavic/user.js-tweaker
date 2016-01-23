@@ -7,11 +7,11 @@ The project is under [Apache License 2.0](https://github.com/CHEF-KOCH/user.js-t
 # Project Goals
 
 * Merge all user.js settings into an addon + automatically sync it in case user.js has changed 
-* Sync settings via mozilla sync (low-prio)
+* Sync settings via Mozilla Sync feature
 * Create profiles for different security levels (strong, medium, low)
 * Add per-site (whitelist) support
 * Check/remove internal Firefox certificates which aren't needed in 99% of all time to lower attacks
-* Add Adroid support
+* Add Adroid Firefox support
 * Harden Firefox in general to not let the dark side win ! :+1:
 * ....
 
@@ -20,7 +20,7 @@ The project is under [Apache License 2.0](https://github.com/CHEF-KOCH/user.js-t
 
 * Chrome support (I will not add)
 * Firefox security related issue which needs to be fixed within the source code
-* Already infected installations which are faked or bundled/manipulated with OpenCandy or Trojans 
+* Already infected installations which are faked or bundled/manipulated with OpenCandy/Trojans/SpyWare ... 
 * Is not an alternative to Tor Firefox Bundle
 * Since the addon only loads with Firefox this can not close the hole between new installation of FF and automatically use the hardened settings from the beginning 
 
