@@ -1,10 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
   <Description about="urn:mozilla:install-manifest">
     <em:id></em:id>
     <em:version>0.0.1</em:version>
+	<em:homepageURL>https://github.com/CHEF-KOCH/user.js-tweaker</em:homepageURL>
+	<em:iconURL>chrome://user.js-tweaker/skin/icon32.png</em:iconURL>
     <em:type>2</em:type>
     <em:bootstrap>true</em:bootstrap>
+	<em:multiprocessCompatible>true</em:multiprocessCompatible>
     <em:unpack>false</em:unpack>
 
     <!-- Firefox -->
@@ -19,9 +24,18 @@
     <!-- Front End MetaData -->
     <em:name>user.js-tweaker</em:name>
     <em:description>Improves privacy by automatically setting some hidden preferences only available through about:config. Use the 'Full user.js-tweaker' button in the addon preferences to make some more changes that are also available through Firefox's normal user interface. That doesn't cover every available option, as some are situational, like User Agent.</em:description>
-    <em:creator/>
-    
+    <em:creator>CHEF-KOCH</em:creator>
+	<em:contributor>Community</em:contributor>
     <em:optionsType>2</em:optionsType>
     
+	<!-- Pale Moon (u no implemented yet !) -->
+    <em:targetApplication>
+      <Description>
+        <em:id></em:id>
+        <em:minVersion>25.0</em:minVersion>
+        <em:maxVersion>25.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+	
   </Description>
 </RDF>
