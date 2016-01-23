@@ -9,8 +9,8 @@ This will be the official [user.js](https://github.com/pyllyukko/user.js) by [py
 * Create profiles for different security levels (strong, medium, low)
 * Add per-site (whitelist) support
 * Check/remove internal Firefox certificates which aren't needed in 99% of all time to lower attacks
+* Add Adroid support
 * ....
-* 
 
 
 # What it can't fix
