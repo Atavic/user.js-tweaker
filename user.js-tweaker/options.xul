@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.keepSettings" pref-name="keepSettings" title="Keep settings on uninstall" type="bool">Firefox settings are normally reverted to preinstallation state when user.js-tweaker is uninstalled. This setting stops user.js-tweaker from making any changes when disabled or removed. WARNING: Due to a bug in the Mozilla SDK this does not currently work. The code is in place so hopefully when the bug is resolved it will work correctly.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.btnFull" pref-name="btnFull" title="Go Full user.js-tweaker" type="control">
+    Apply all recommended settings. May cause some sites to lose functionality. Does not apply all possible user.js-tweaker-managed settings.
+    <button data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" label="Full user.js-tweaker" oncommand="Services.obs.notifyObservers(null, 'jid1-qBe6fIS7EMdhDA@jetpack-cmdPressed', 'btnFull');" pref-name="btnFull"/>
+  </setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.btnDefaults" pref-name="btnDefaults" title="Reset addon to default state" type="control">
+    Revert to user.js-tweaker defaults. First step if sites malfunction after going Full user.js-tweaker.
+    <button data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" label="Defaults" oncommand="Services.obs.notifyObservers(null, 'jid1-qBe6fIS7EMdhDA@jetpack-cmdPressed', 'btnDefaults');" pref-name="btnDefaults"/>
+  </setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.btnRestore" pref-name="btnRestore" title="Restore your settings from before user.js-tweaker" type="control">
+    This is necessary before uninstall/disable if you want to revert to your prior settings, because of a Mozilla SDK bug which currently ignores 'unload' events.
+    <button data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" label="Restore" oncommand="Services.obs.notifyObservers(null, 'jid1-qBe6fIS7EMdhDA@jetpack-cmdPressed', 'btnRestore');" pref-name="btnRestore"/>
+  </setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.btnReset" pref-name="btnReset" title="Reset all managed settings to Firefox's default state" type="control">
+    This is necessary before uninstall/disable if you want to revert to Firefox default settings, because of a Mozilla SDK bug which currently ignores 'unload' events.
+    <button data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" label="Reset" oncommand="Services.obs.notifyObservers(null, 'jid1-qBe6fIS7EMdhDA@jetpack-cmdPressed', 'btnReset');" pref-name="btnReset"/>
+  </setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.cache.disk.enable" pref-name="browser.cache.disk.enable" title="browser.cache.disk.enable" type="bool">When a page is loaded, it can be cached so it doesn't need to be downloaded to be redisplayed. For e-mail and news, messages and attachments are cached as well. This preference controls whether to use the hard drive for caching purposes.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.cache.memory.enable" pref-name="browser.cache.memory.enable" title="browser.cache.memory.enable" type="bool">When a page is loaded, it can be cached so it doesn't need to be rerendered to be redisplayed. For e-mail and news, messages and attachments are cached as well. This preference controls whether to use memory to cache decoded images, messages, chrome (application user interface elements), and secure (https) pages</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.cache.offline.enable" pref-name="browser.cache.offline.enable" title="browser.cache.offline.enable" type="bool">Recent versions of Mozilla offer an 'offline cache' that web applications can use to store data for retrieval even when the browser is offline. Combined with online/offline events, developers can write JavaScript that acts intelligently until the connection is restored.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.newtabpage.directory.ping" pref-name="browser.newtabpage.directory.ping" title="browser.newtabpage.directory.ping" type="bool">Unticking this option should prevent the browser from reporting Tiles metrics.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.newtabpage.directory.source" pref-name="browser.newtabpage.directory.source" title="browser.newtabpage.directory.source" type="bool">Unticking this option should stop the browser from displaying and fetching Tiles from upstream.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.newtabpage.enabled" pref-name="browser.newtabpage.enabled" title="browser.newtabpage.enabled" type="bool">Use a special page for new tabs. This could display private information, since the default is to show thumbnails of visited pages.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.newtabpage.enhanced" pref-name="browser.newtabpage.enhanced" title="browser.newtabpage.enhanced" type="bool">Use the new enhanced tiles on the about:newtab page.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.newtab.url" pref-name="browser.newtab.url" title="browser.newtab.url" type="menulist">
+    What to use as newtab page.
+    <menulist>
+      <menupopup>
+        <menuitem label="about:blank" value="about:blank"/>
+        <menuitem label="about:home (old default)" value="about:home"/>
+        <menuitem label="about:newtab (default)" value="about:newtab"/>
+      </menupopup>
+    </menulist>
+  </setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.pagethumbnails.capturing_disabled" pref-name="browser.pagethumbnails.capturing_disabled" title="browser.pagethumbnails.capturing_disabled" type="bool">Stop Firefox from taking screenshots for use as thumbnails on the newtab page. The screenshots could contain sensitive information.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.safebrowsing.enabled" pref-name="browser.safebrowsing.enabled" title="browser.safebrowsing.enabled" type="bool">Firefox 2.0 incorporates the Google Safe Browsing extension in its own Phishing Protection feature to detect and warn users of phishy web sites.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.safebrowsing.malware.enabled" pref-name="browser.safebrowsing.malware.enabled" title="browser.safebrowsing.malware.enabled" type="bool">As part of its Safe Browsing feature, Mozilla Firefox keeps track of a list of malware to compare against data the user downloads. In the event the user downloads known malware, a warning can be displayed. This preference determines whether to enable these malware checks.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.search.suggest.enabled" pref-name="browser.search.suggest.enabled" title="browser.search.suggest.enabled" type="bool">In Firefox 2.0, search plugins can offer 'search suggestions' of similar search queries as the user enters a query in the search bar. This preference controls whether or not search suggestions are enabled.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.browser.send_pings" pref-name="browser.send_pings" title="browser.send_pings" type="bool">The Web Applications 1.0 specification (also known as HTML5) defines a new attribute for &lt;a&gt; elements: ping. This attribute contains one or more URIs to “ping” (send a POST request to) when the user clicks the link. The attribute would be useful for letting websites track visitors’ clicks.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.datareporting.healthreport.service.enabled" pref-name="datareporting.healthreport.service.enabled" title="datareporting.healthreport.service.enabled" type="bool">Enables Health Report. While this type of data is useful to development and, ultimately, users, it could leak information.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.datareporting.healthreport.uploadingEnabled" pref-name="datareporting.healthreport.uploadingEnabled" title="datareporting.healthreport.uploadingEnabled" type="bool">Sends Health Report data to Mozilla. While this type of data is useful to development and, ultimately, users, it could leak information.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.datareporting.policy.dataSubmissionEnabled" pref-name="datareporting.policy.dataSubmissionEnabled" title="datareporting.policy.dataSubmissionEnabled" type="bool">Sends Health Report data to Mozilla. While this type of data is useful to development and, ultimately, users, it could leak information.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.dom.event.clipboardevents.enabled" pref-name="dom.event.clipboardevents.enabled" title="dom.event.clipboardevents.enabled" type="bool">lets websites get notifications if the user copies, pastes, or cuts something from a web page, and it lets them know which part of the page had been selected. The emitting of the oncopy, oncut and onpaste events are controlled by this preference.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.dom.ipc.plugins.flash.subprocess.crashreporter.enabled" pref-name="dom.ipc.plugins.flash.subprocess.crashreporter.enabled" title="dom.ipc.plugins.flash.subprocess.crashreporter.enabled" type="bool">lets websites get notifications if the user copies, pastes, or cuts something from a web page, and it lets them know which part of the page had been selected. The emitting of the oncopy, oncut and onpaste events are controlled by this preference.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.dom.storage.enabled" pref-name="dom.storage.enabled" title="dom.storage.enabled" type="bool">The Web Applications 1.0 specification defines a mechanism allowing web pages to store information with a web browser (similar to cookies) called “client-side session and persistent storage.” Although use of session storage is subject to a user’s cookie preferences, this preference allows it to be disabled entirely.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.geo.enabled" pref-name="geo.enabled" title="geo.enabled" type="bool">Reports geographical location. If disabled, note that sites could still have some idea of your location based on your IP address.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.media.gmp-gmpopenh264.enabled" pref-name="media.gmp-gmpopenh264.enabled" title="media.gmp-gmpopenh264.enabled" type="bool">New plugin that can't be made click-to-play.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.media.peerconnection.enabled" pref-name="media.peerconnection.enabled" title="media.peerconnection.enabled" type="bool">WebRTC can access your local IP addresses even through proxies.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.network.cookie.cookieBehavior" pref-name="network.cookie.cookieBehavior" title="network.cookie.cookieBehavior" type="menulist">
+    What cookies are allowed
+    <menulist>
+      <menupopup>
+        <menuitem label="All cookies allowed (default)" value="0"/>
+        <menuitem label="No third party cookies allowed" value="1"/>
+        <menuitem label="No cookies allowed" value="2"/>
+      </menupopup>
+    </menulist>
+  </setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.network.cookie.lifetimePolicy" pref-name="network.cookie.lifetimePolicy" title="network.cookie.lifetimePolicy" type="menulist">
+    How long cookies are kept
+    <menulist>
+      <menupopup>
+        <menuitem label="Specified by site (default)" value="0"/>
+        <menuitem label="Ask user" value="1"/>
+        <menuitem label="Expire when browser closes" value="2"/>
+      </menupopup>
+    </menulist>
+  </setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.network.dns.disablePrefetch" pref-name="network.dns.disablePrefetch" title="network.dns.disablePrefetch" type="bool">DNS prefetching was implemented in Firefox 3.5 to improve page load time. This feature allows Firefox to perform domain name resolution proactively and in parallel for hyperlinks, images, CSS, JavaScript, and other webpage content.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.network.http.referer.spoofSource" pref-name="network.http.referer.spoofSource" title="network.http.referer.spoofSource" type="bool">Send target as referrer.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.network.http.referer.XOriginPolicy" pref-name="network.http.referer.XOriginPolicy" title="network.http.referer.XOriginPolicy" type="menulist">
+    Referrer cross-site origin policy defines when to send referrers.
+    <menulist>
+      <menupopup>
+        <menuitem label="Always (default)" value="0"/>
+        <menuitem label="When base domains match" value="1"/>
+        <menuitem label="When full host matches" value="2"/>
+      </menupopup>
+    </menulist>
+  </setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.network.http.sendRefererHeader" pref-name="network.http.sendRefererHeader" title="network.http.sendRefererHeader" type="menulist">
+    As part of HTTP, requests can include a 'Referer' (sic) header that tells the server which page the user was on that initiated the request. Servers use this information to track users' paths through the site and possibly provide additional features.
+    <menulist>
+      <menupopup>
+        <menuitem label="Never send" value="0"/>
+        <menuitem label="Send for links" value="1"/>
+        <menuitem label="Send for links and images (default)" value="2"/>
+      </menupopup>
+    </menulist>
+  </setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.network.http.sendSecureXSiteReferrer" pref-name="network.http.sendSecureXSiteReferrer" title="network.http.sendSecureXSiteReferrer" type="bool">The HTTP spec specifies that going from a secure (https) server to a non-secure (http) server should not result in a Referer header being sent, but does not define whether a Referer should be sent between two secure sites. This preferences controls that option.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.network.prefetch-next" pref-name="network.prefetch-next" title="network.prefetch-next" type="bool">Link prefetching is when a webpage hints to the browser that certain pages are likely to be visited, so the browser downloads them immediately so they can be displayed immediately when the user requests it.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.network.proxy.socks_remote_dns" pref-name="network.proxy.socks_remote_dns" title="network.proxy.socks_remote_dns" type="bool">This preference controls whether DNS lookups for SOCKS v5 clients happen on the client or on the proxy server. *** NOTE: There's a bug report saying that this setting is ignored. It's here in hopes that it's fixed down the road.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.plugin.state.flash" pref-name="plugin.state.flash" title="plugin.state.flash" type="menulist">
+    Restrict Flash for security and privacy.
+    <menulist>
+      <menupopup>
+        <menuitem label="Never activate" value="0"/>
+        <menuitem label="Ask to activate" value="1"/>
+        <menuitem label="Always activate" value="2"/>
+      </menupopup>
+    </menulist>
+  </setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.plugins.click_to_play" pref-name="plugins.click_to_play" title="plugins.click_to_play" type="bool">prevents plugin content from loading until you activate the plugin.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.plugins.enumerable_names" pref-name="plugins.enumerable_names" title="plugins.enumerable_names" type="bool">Allows enumeration of plugins, which can be used for tracking/fingerprinting. Note that even if disabled, sites could still test for individual plugins and tell that they're present even if they're inaccessible due to Click to Play setting.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.privacy.donottrackheader.enabled" pref-name="privacy.donottrackheader.enabled" title="privacy.donottrackheader.enabled" type="bool">The Do Not Track header field requests sites not track users. Its efficacy is debatable, however, as no site is obligated to honor the request. At the same time, it adds more identifiable information to browsing that can be used for fingerprinting.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.privacy.trackingprotection.enabled" pref-name="privacy.trackingprotection.enabled" title="privacy.trackingprotection.enabled" type="bool">Blocks 3rd party trackers based on Disconnect's blocklist.</setting>
+  <setting data-jetpack-id="jid1-qBe6fIS7EMdhDA@jetpack" pref="extensions.jid1-qBe6fIS7EMdhDA@jetpack.toolkit.telemetry.enabled" pref-name="toolkit.telemetry.enabled" title="toolkit.telemetry.enabled" type="bool">Sends browser statistics to Mozilla.</setting>
+</vbox>

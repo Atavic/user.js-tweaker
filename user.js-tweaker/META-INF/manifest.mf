@@ -1,0 +1,36 @@
+Manifest-Version: 1.0
+
+Name: install.rdf
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 
+SHA1-Digest: 
+
+Name: bootstrap.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 
+SHA1-Digest: 
+
+Name: harness-options.json
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 
+SHA1-Digest: 
+Name: locales.json
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 
+SHA1-Digest: 
+
+Name: options.xul
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 
+SHA1-Digest: 
+
+Name: defaults/preferences/prefs.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 
+SHA1-Digest: 
+
+Name: resources/tinfoil/lib/main.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 
+SHA1-Digest: 
+

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id></em:id>
+    <em:version>0.0.1</em:version>
+    <em:type>2</em:type>
+    <em:bootstrap>true</em:bootstrap>
+    <em:unpack>false</em:unpack>
+
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id></em:id>
+        <em:minVersion>40.0</em:minVersion>
+        <em:maxVersion>46.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Front End MetaData -->
+    <em:name>user.js-tweaker</em:name>
+    <em:description>Improves privacy by automatically setting some hidden preferences only available through about:config. Use the 'Full user.js-tweaker' button in the addon preferences to make some more changes that are also available through Firefox's normal user interface. That doesn't cover every available option, as some are situational, like User Agent.</em:description>
+    <em:creator/>
+    
+    <em:optionsType>2</em:optionsType>
+    
+  </Description>
+</RDF>
