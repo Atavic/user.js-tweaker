@@ -1,3 +1,4 @@
 *.xpi
 .project
 .settings
+addon-sdk-*/

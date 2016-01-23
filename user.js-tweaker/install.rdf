@@ -28,6 +28,15 @@
 	<em:contributor>Community</em:contributor>
     <em:optionsType>2</em:optionsType>
     
+    <!-- Firefox Mobile -->
+    <em:targetApplication>
+        <Description>
+             <em:id>{}</em:id>
+               <em:minVersion>35.0</em:minVersion>
+                <em:maxVersion>45.*</em:maxVersion>
+        </Description>
+	
+	
 	<!-- Pale Moon (u no implemented yet !) -->
     <em:targetApplication>
       <Description>
