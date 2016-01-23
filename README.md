@@ -2,6 +2,7 @@
 
 This will be the official [user.js](https://github.com/pyllyukko/user.js) by [pyllyukko](https://github.com/pyllyukko) and is maintained by [CHEF-KOCH](https://github.com/CHEF-KOCH) and community. 
 
+The project is under [Apache License 2.0](https://github.com/CHEF-KOCH/user.js-tweaker/blob/master/LICENSE).
 
 # Project Goals
 
